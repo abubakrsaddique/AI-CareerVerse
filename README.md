@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI CareerVerse
 
-## Getting Started
+## Overview
 
-First, run the development server:
+An AI-powered Resume Analyzer that extracts insights from your resume and gives instant feedback like skills, score, and AI-generated summary.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Upload PDF Resume
+- AI extracts candidate name automatically
+- Resume scoring system (0–100)
+- Skill extraction & normalization
+- Fully responsive and clean frontend interface.
+- Real-time dashboard updates
+- Modern animated UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
 
-## Learn More
+      - Next.js
+      - React.js
+      - TypeScript
+      - Tailwind CSS
+      - GSAP Animations
+      - Axios
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+      - Node.js
+      - Express.js
+      - MongoDB + Mongoose
+      - Multer (File Uploads)
+      - JWT Authentication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### AI Service
 
-## Deploy on Vercel
+      - FastAPI (Python)
+      - PyMuPDF (PDF parsing)
+      - Custom NLP logic for:
+         - Skill extraction
+         - Name detection
+         - Resume scoring
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/yourusername/ai-careerverse.git
+
+   ```
+
+2. Navigate to the project directory:
+
+   ```shell
+    cd frontend
+    cd backend
+
+   ```
+
+3. Install the dependencies:
+
+   ```shell
+    npm install
+
+   ```
+
+4. Start the development server:
+
+   ```shell
+   npm run dev
+
+   ```
+
+5. Start the AI server:
+
+   ```shell
+   cd ai-service
+   pip install -r requirements.txt
+   python -m venv venv
+    # Windows
+   venv\Scripts\activate
+     # macOS/Linux
+   source venv/bin/activate
+   run: uvicorn main:app --reload
+   ```
+
+   ## Author
+
+- [@abubakrsaddique](https://github.com/abubakrsaddique)
