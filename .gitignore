@@ -1,0 +1,21 @@
+# ========== ENV ==========
+.env
+.env.local
+
+# ========== NODE ==========
+node_modules/
+.next/
+dist/
+
+# ========== PYTHON ==========
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# ========== LOGS ==========
+npm-debug.log*
+yarn-debug.log*
+
+# ========== OS ==========
+.DS_Store
